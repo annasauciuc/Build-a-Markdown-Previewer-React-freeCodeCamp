@@ -5,3 +5,7 @@ textarea {
     box-shadow: 1px 1px 10px 2px #3a5f5f;
     border-top: none;
 }
+
+.preview {
+    height: 250vh;
+}
