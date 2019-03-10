@@ -11,6 +11,7 @@ body {
 .colorScheme,
 .editorWrap textarea,
 .previewWrap {
+    overflow-wrap: break-word;
     background-color: #c0d8d8;
     border: 1px solid #1d2f2f;
     box-shadow: 1px 1px 10px 2px #3a5f5f;
@@ -30,4 +31,8 @@ body {
 .fa-arrows-alt {
     position: absolute;
     right: 4px;
+}
+
+#preview img {
+    max-width: 300!important;
 }
