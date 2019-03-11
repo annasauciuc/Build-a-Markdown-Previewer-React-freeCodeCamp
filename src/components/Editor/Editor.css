@@ -4,6 +4,7 @@ textarea {
     border: 1px solid #1d2f2f;
     box-shadow: 1px 1px 10px 2px #3a5f5f;
     border-top: none;
+    min-height: 200px;
 }
 
 .maximized {
@@ -17,6 +18,22 @@ textarea {
     cursor: pointer;
 }
 
-.hidden {
-    display: none;
+h1 {
+    border-bottom: 2px solid #224B4B;
+}
+
+h2 {
+    border-bottom: 1px solid #224B4B;
+}
+
+pre {
+    background: white;
+    padding: 5px 0 5px 5px;
+}
+
+code {
+    background: white;
+    padding: 1px 4px 2px 4px;
+    font-size: 12px;
+    font-weight: bold;
 }
