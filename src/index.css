@@ -28,11 +28,14 @@ body {
     font-size: 15px;
 }
 
-.fa-arrows-alt {
-    position: absolute;
-    right: 4px;
-}
+.fa-arrows-alt {}
 
 #preview img {
     max-width: 300!important;
+}
+
+#maxEditor,
+#maxPreviwer {
+    position: absolute;
+    right: 4px;
 }

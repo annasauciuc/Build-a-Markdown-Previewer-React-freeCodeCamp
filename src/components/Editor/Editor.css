@@ -5,3 +5,18 @@ textarea {
     box-shadow: 1px 1px 10px 2px #3a5f5f;
     border-top: none;
 }
+
+.maximized {
+    width: 96%;
+    min-height: 100vh;
+    margin: auto;
+}
+
+.resizer {
+    color: #57e2b1;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
