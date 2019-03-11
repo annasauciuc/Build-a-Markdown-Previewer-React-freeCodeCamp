@@ -24,7 +24,7 @@ class Editor extends Component {
         });
       });
   };
-  onSearchChange(event) {
+  onTextChange(event) {
     this.setState({ value: event.target.value });
   }
 
@@ -38,9 +38,11 @@ class Editor extends Component {
   }
   renderEditor() {
     const { value, fromWhere } = this.state;
-    // if (fromWhere == "maxPreviwer") {
-    //   return;
-    // }
+    let style = "w-100 h-100 editorContainer";
+    if (fromWhere === "maxEditor") {
+      style = "w-100 h-100 editorContainer maximized";
+    }
+
     return (
       <div className=" mx-auto col-xs-8 col-sm-8 col-md-8">
         <div className="form-group">
@@ -49,11 +51,11 @@ class Editor extends Component {
             Editor
             {fromWhere == ""
               ? this.renderButton("maxEditor", "fas fa-arrows-alt")
-              : this.renderButton("", "fas fa-location-arrow")}
+              : this.renderButton("", "fas fa-location-arrow resizer")}
           </div>
           <textarea
-            onChange={event => this.onSearchChange(event)}
-            className="w-100 h-100 editorContainer"
+            onChange={event => this.onTextChange(event)}
+            className={style}
             charswidth="23"
             name="text_body"
             id="editor"
@@ -66,15 +68,15 @@ class Editor extends Component {
   renderPreviewer() {
     const { value, fromWhere } = this.state;
     return (
-      <div id="previewContainer" className="   col-xs-12 col-sm-12 col-md-12">
-        <div className="previewWrap   preview">
-          <div className="toolbar   w-100">
+      <div id="previewContainer" className="col-xs-12 col-sm-12 col-md-12">
+        <div className="previewWrap preview">
+          <div className="toolbar w-100">
             <i className="pl-1 pr-2 fab fa-free-code-camp"> Previewer</i>
             {fromWhere == ""
               ? this.renderButton("maxPreviewer", "fas fa-arrows-alt")
-              : this.renderButton("", "fas fa-location-arrow")}
+              : this.renderButton("", "fas fa-location-arrow resizer")}
           </div>
-          <div className=" ml-1" id="preview">
+          <div className="ml-1" id="preview">
             <Markdown source={value} />
           </div>
         </div>
