@@ -1,8 +1,6 @@
 textarea {
     font-family: 'VT323', monospace;
-    background-color: #c0d8d8;
-    border: 1px solid #1d2f2f;
-    box-shadow: 1px 1px 10px 2px #3a5f5f;
+    background-color: #a0d4f8;
     border-top: none;
     min-height: 200px;
 }

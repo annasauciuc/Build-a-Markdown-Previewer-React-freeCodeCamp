@@ -1,26 +1,4 @@
-// import React, { Component } from "react";
-// import Editor from "./components/Editor/Editor";
-// import "./App.css";
 
-// class App extends Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       value: "",
-//       active: false
-//     };
-//   }
-//   render() {
-//     return (
-//       <div    className="container   mb-5 " id="quote-box" >
-//         {" "}
-//         <Editor />
-//       </div>
-//     );
-//   }
-// }
-
-// export default App;
 
 import React, { Component } from "react";
 import Editor from "./components/Editor/Editor";
@@ -58,7 +36,6 @@ class App extends Component {
 
   render() {
     const { value, fromWhere } = this.state;
-    console.log("fromWhereContainer", fromWhere);
     if (fromWhere == "maxEditor") {
       return (
         <Editor
