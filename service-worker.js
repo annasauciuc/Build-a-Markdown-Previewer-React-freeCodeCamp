@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Build-a-Markdown-Previewer-React-freeCodeCamp/precache-manifest.0509fd4726972cf9714d9d9239d9fbf3.js"
+  "/Build-a-Markdown-Previewer-React-freeCodeCamp/precache-manifest.9748b9cc8e232e1530510abc97176a9f.js"
 );
 
 workbox.clientsClaim();
